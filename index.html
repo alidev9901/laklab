@@ -37,7 +37,7 @@
                                 </a>
                             </li>
                             <li class="nav__item header__nav-item">
-                                <a href="#application" class="nav__link header__nav-link">
+                                <a href="#app" class="nav__link header__nav-link">
                                     Приложение
                                 </a>
                             </li>
@@ -143,6 +143,15 @@
                             </button>
                         </div>
                     </div>
+                    <a href="#" class="enroll-button intro__enroll show-sm-flex" target="_blank">
+                        Онлайн запись
+                        <svg class="pulse-svg" width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <circle class="circle first-circle" cx="25" cy="25" r="25"></circle>
+                            <circle class="circle second-circle" cx="25" cy="25" r="25"></circle>
+                            <circle class="circle third-circle" cx="25" cy="25" r="25"></circle>
+                            <circle class="circle" cx="25" cy="25" r="25"></circle>
+                        </svg>
+                    </a>
                 </div>
                 <div class="intro__info">
                     <div class="container">
@@ -169,7 +178,16 @@
             </div>
         </section>
         <section class="section section--gap-top gallery">
-            <div class="container">
+            <div class="container gallery__header-container">
+                <a href="#" class="enroll-button gallery__enroll" target="_blank">
+                    Онлайн запись
+                    <svg class="pulse-svg" width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <circle class="circle first-circle" cx="25" cy="25" r="25"></circle>
+                        <circle class="circle second-circle" cx="25" cy="25" r="25"></circle>
+                        <circle class="circle third-circle" cx="25" cy="25" r="25"></circle>
+                        <circle class="circle" cx="25" cy="25" r="25"></circle>
+                    </svg>
+                </a>
                 <header class="section__header">
                     <h2 class="section__title">
                         Качество без компромиссов
@@ -178,6 +196,43 @@
                         Наша команда профессионалов с радостью поможет Вам создать неповторимый образ, который будет отражать Вашу уверенность и элегантность.
                     </div>
                 </header>
+            </div>
+            <div class="gallery__content">
+                <div class="swiper gallery__slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="gallery__item">
+                                <img src="img/gallery/gallery-1.png" alt="" class="gallery__img">
+                                <img src="img/gallery/gallery-2.png" alt="" class="gallery__img">
+                                <img src="img/gallery/gallery-3.png" alt="" class="gallery__img big">
+                                <img src="img/gallery/gallery-4.png" alt="" class="gallery__img">
+                                <img src="img/gallery/gallery-5.png" alt="" class="gallery__img">
+                                <img src="img/gallery/gallery-6.png" alt="" class="gallery__img">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="gallery__item">
+                                <img src="img/gallery/gallery-1.png" alt="" class="gallery__img">
+                                <img src="img/gallery/gallery-2.png" alt="" class="gallery__img big">
+                                <img src="img/gallery/gallery-3.png" alt="" class="gallery__img">
+                                <img src="img/gallery/gallery-4.png" alt="" class="gallery__img">
+                                <img src="img/gallery/gallery-5.png" alt="" class="gallery__img">
+                                <img src="img/gallery/gallery-6.png" alt="" class="gallery__img">
+                                <img src="img/gallery/gallery-7.png" alt="" class="gallery__img">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="gallery__item">
+                                <img src="img/gallery/gallery-1.png" alt="" class="gallery__img">
+                                <img src="img/gallery/gallery-2.png" alt="" class="gallery__img">
+                                <img src="img/gallery/gallery-3.png" alt="" class="gallery__img big">
+                                <img src="img/gallery/gallery-4.png" alt="" class="gallery__img">
+                                <img src="img/gallery/gallery-5.png" alt="" class="gallery__img">
+                                <img src="img/gallery/gallery-6.png" alt="" class="gallery__img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="address" class="section section--gap-top address">
@@ -190,7 +245,7 @@
                         Погрузитесь в атмосферу релаксации, качественного сервиса и безупречного мастерства.
                     </div>
                 </header>
-                <div class="address__content">
+                <div class="address__content dropdown-container">
                     <div class="address__items">
                         <address class="address__item dropdown">
                             <button class="btn address__item-title dropdown__button">
@@ -762,15 +817,1156 @@
                 </div>
             </div>
         </section>
-        <section id="price" class="section section--gap-top price">
+        <section id="prices" class="section section--gap-top price">
             <div class="container">
                 <header class="section__header">
                     <h2 class="section__title">
                         Прайс
                     </h2>
                 </header>
-                <div class="price__content">
-                    
+                <div class="price__content dropdown-container">
+                    <div class="select price__select show-sm">
+                        <h4 class="price__select-title">
+                            Выберите сервис
+                        </h4>
+                        <div class="price__select-current select__current">
+                            <span>Популярные комплексы</span>
+                            <i class="dropdown__button-icon arrow"></i>
+                        </div>
+                        <ul class="price__select-list select__list">
+                            <li data-id="service_1" class="select__list-item current">
+                                Популярные комплексы
+                            </li>
+                            <li data-id="service_2" class="select__list-item">
+                                Ногтевой сервис
+                            </li>
+                            <li data-id="service_3" class="select__list-item">
+                                Ресницы и брови
+                            </li>
+                            <li data-id="service_4" class="select__list-item">
+                                Волосы
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="service_1" class="price__item dropdown current dropdown--active">
+                        <div class="price__item-header">
+                            <button class="btn price__item-title dropdown__button">
+                                Популярные комплексы
+                                <span class="dropdown__button-icon arrow price__item-title-icon"></span>
+                            </button>
+                        </div>
+                        <div class="price__row dropdown__content" style="display: flex;">
+                            <div class="price__col full">
+                                <ul class="price__list grid">
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Комплекс маникюр
+                                            </span>
+                                            <span>
+                                                2 450 ₽
+                                            </span>
+                                        </div>
+                                        <div class="price__list-item-description">
+                                            Снятие старого покрытия при необходимости, аппаратный или комбинированный маникюр, выравнивание базой, покрытие LUXIO под кутикулу, финишное покрытие - топ на выбор - любой (матовый, с шиммером). 
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Коррекция геля
+                                            </span>
+                                            <span>
+                                                3 500 ₽
+                                            </span>
+                                        </div>
+                                        <div class="price__list-item-description">
+                                            Коррекция уже наращенных ногтей, комбинированный или аппаратный маникюр, выравнивание гелем и покрытие под кутикулу гель-лаком LUXIO.
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Комплекс педикюр
+                                            </span>
+                                            <span>
+                                                2 950 ₽
+                                            </span>
+                                        </div>
+                                        <div class="price__list-item-description">
+                                            Снятие старого покрытия при необходимости, аппаратный или комбинированный педикюр, выравнивание базой, покрытие LUXIO под кутикулу, финишное покрытие - топ на выбор - любой (матовый, с шиммером), обработка стоп и пяточек входит в стоимость. 
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Комплекс маникюр
+                                            </span>
+                                            <span>
+                                                2 450 ₽
+                                            </span>
+                                        </div>
+                                        <div class="price__list-item-description">
+                                            Снятие старого покрытия при необходимости, аппаратный или комбинированный маникюр, выравнивание базой, покрытие LUXIO под кутикулу, финишное покрытие - топ на выбор - любой (матовый, с шиммером). 
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Коррекция геля
+                                            </span>
+                                            <span>
+                                                3 500 ₽
+                                            </span>
+                                        </div>
+                                        <div class="price__list-item-description">
+                                            Коррекция уже наращенных ногтей, комбинированный или аппаратный маникюр, выравнивание гелем и покрытие под кутикулу гель-лаком LUXIO.
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Комплекс педикюр
+                                            </span>
+                                            <span>
+                                                2 950 ₽
+                                            </span>
+                                        </div>
+                                        <div class="price__list-item-description">
+                                            Снятие старого покрытия при необходимости, аппаратный или комбинированный педикюр, выравнивание базой, покрытие LUXIO под кутикулу, финишное покрытие - топ на выбор - любой (матовый, с шиммером), обработка стоп и пяточек входит в стоимость. 
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="service_2" class="price__item dropdown">
+                        <div class="price__item-header">
+                            <button class="btn price__item-title dropdown__button">
+                                Ногтевой сервис
+                                <span class="dropdown__button-icon arrow price__item-title-icon"></span>
+                            </button>
+                        </div>
+                        <div class="price__row dropdown__content">
+                            <div class="price__col">
+                                <ul class="price__list">
+                                    <li class="price__list-item heading">
+                                        Основные услуги
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Эко маникюр
+                                            </span>
+                                            <span>
+                                                2 450 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Педикюр
+                                            </span>
+                                            <span>
+                                                1 600 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Гель-лак Luxio
+                                            </span>
+                                            <span>
+                                                1 200 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Камуфлируюшая база/граттол опал как слой цвета
+                                            </span>
+                                            <span>
+                                                1 200 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Маникюр
+                                            </span>
+                                            <span>
+                                                1 100 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Снятие геля
+                                            </span>
+                                            <span>
+                                                500 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Снятие гель-лак без комплекса
+                                            </span>
+                                            <span>
+                                                400 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Снятие гелевого урепления
+                                            </span>
+                                            <span>
+                                                400 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Снятие лак/гель-лак
+                                            </span>
+                                            <span>
+                                                150 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="price__col">
+                                <ul class="price__list">
+                                    <li class="price__list-item heading">
+                                        Наращивание / укрепление
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Гелевое наращивание комплекс
+                                            </span>
+                                            <span>
+                                                4 000 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Коррекция геля комплекс
+                                            </span>
+                                            <span>
+                                                3 500 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Коррекция геля комлекс
+                                            </span>
+                                            <span>
+                                                4 000 ₽
+                                            </span>
+                                        </div>
+                                        <div class="price__list-item-description small">
+                                            (сломано более 4 ногтей)
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Поднятие клюющих ногтей комплекс
+                                            </span>
+                                            <span>
+                                                3 500 ₽
+                                            </span>
+                                        </div>
+                                        <div class="price__list-item-description small">
+                                            (однотон)
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Поднятие клюющего ногтя
+                                            </span>
+                                            <span>
+                                                350 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Реставрация/ремонт ногтя
+                                            </span>
+                                            <span>
+                                                250 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Наращивание 1 ногтя
+                                            </span>
+                                            <span>
+                                                350 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Укрепление гелем
+                                            </span>
+                                            <span>
+                                                800 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Укрепление акриловой пудрой
+                                            </span>
+                                            <span>
+                                                600 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Укрепление акригелем/полигелем
+                                            </span>
+                                            <span>
+                                                900 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="price__col full no-gap">
+                                <div class="price__list-item heading ">
+                                    Другие услуги
+                                </div>
+                                <ul class="price__list grid">
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Лечебное покрытие IBX
+                                            </span>
+                                            <span>
+                                                900 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Полировка ногтей
+                                            </span>
+                                            <span>
+                                                300 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Лак бесцветный
+                                            </span>
+                                            <span>
+                                                450 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Покрытие топом
+                                            </span>
+                                            <span>
+                                                500 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Маникюр мужской
+                                            </span>
+                                            <span>
+                                                1 800 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Педикюр мужской
+                                            </span>
+                                            <span>
+                                                2 800 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Парафинотерапия
+                                            </span>
+                                            <span>
+                                                500 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="price__col full no-gap">
+                                <div class="price__list-item heading">
+                                    Дизайны
+                                </div>
+                                <ul class="price__list grid">
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Френч
+                                            </span>
+                                            <span>
+                                                600 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Френч глиттер
+                                            </span>
+                                            <span>
+                                                800 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Жидкий глиттер/дизайн/доп.цвет
+                                            </span>
+                                            <span>
+                                                500 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Кошачий глаз/светоотражающий
+                                            </span>
+                                            <span>
+                                                500 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Дизайн простой 1 ноготь
+                                            </span>
+                                            <span>
+                                                100 ₽
+                                            </span>
+                                        </div>
+                                        <div class="price__list-item-description small">
+                                            (глиттер Б, точки, полоски, слайдер/растяжка/сухоцвет)
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Дизайн средней сложности 1 ноготь
+                                            </span>
+                                            <span>
+                                                200 ₽
+                                            </span>
+                                        </div>
+                                        <div class="price__list-item-description small">
+                                            (стемпинг, геометрия, рисунок, мрамор)
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Дизайн средней сложности все ногти
+                                            </span>
+                                            <span>
+                                                1 500 ₽
+                                            </span>
+                                        </div>
+                                        <div class="price__list-item-description small">
+                                            (стемпинг, геометрия, рисунок, мрамор)
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Дизайн сложный 1 ноготь
+                                            </span>
+                                            <span>
+                                                300 ₽
+                                            </span>
+                                        </div>
+                                        <div class="price__list-item-description small">
+                                            (худ. роспись, инкрустация)
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Втирка все пальчики
+                                            </span>
+                                            <span>
+                                                600 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Омбре/мраморная роспись/геометрия/рисунок 1 пальчик
+                                            </span>
+                                            <span>
+                                                150 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Омбре/мраморная роспись все пальчики
+                                            </span>
+                                            <span>
+                                                1 000 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Страза
+                                            </span>
+                                            <span>
+                                                30 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="service_3" class="price__item dropdown">
+                        <div class="price__item-header">
+                            <button class="btn price__item-title dropdown__button">
+                                Ресницы и брови
+                                <span class="dropdown__button-icon arrow price__item-title-icon"></span>
+                            </button>
+                        </div>
+                        <div class="price__row dropdown__content">
+                            <div class="price__col full">
+                                <ul class="price__list grid">
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Классика
+                                            </span>
+                                            <span>
+                                                2 400 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                1,5D объем
+                                            </span>
+                                            <span>
+                                                2 700 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                2D объем
+                                            </span>
+                                            <span>
+                                                3 000₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                2-3D объем
+                                            </span>
+                                            <span>
+                                                3 300 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                3D объем
+                                            </span>
+                                            <span>
+                                                3 600 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                3-4D объем
+                                            </span>
+                                            <span>
+                                                3 950 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                4D объем
+                                            </span>
+                                            <span>
+                                                4 300 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                4-5D объем
+                                            </span>
+                                            <span>
+                                                4 600 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                5D объем
+                                            </span>
+                                            <span>
+                                                5 100 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Нижние ресницы
+                                            </span>
+                                            <span>
+                                                1 700 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Снятие чужих ресниц
+                                            </span>
+                                            <span>
+                                                300 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Коррекция реснички
+                                            </span>
+                                            <span>
+                                                500 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Лучики, эффект Ким
+                                            </span>
+                                            <span>
+                                                600 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Цветные реснички
+                                            </span>
+                                            <span>
+                                                600 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Снятие без наращивания
+                                            </span>
+                                            <span>
+                                                500 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Архитектура бровей
+                                            </span>
+                                            <span>
+                                                1 500 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Коррекция бровей/окрашивание бровей/счастье для бровей
+                                            </span>
+                                            <span>
+                                                800 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Мужская коррекция бровей
+                                            </span>
+                                            <span>
+                                                1 000 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Ламинирование бровей
+                                            </span>
+                                            <span>
+                                                2 500 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Ботокс ресниц
+                                            </span>
+                                            <span>
+                                                600 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Окрашивание ресниц
+                                            </span>
+                                            <span>
+                                                800 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Только уголки
+                                            </span>
+                                            <span>
+                                                1 000 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Над губой/подбородок/баки
+                                            </span>
+                                            <span>
+                                                500 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Все лицо депиляция
+                                            </span>
+                                            <span>
+                                                900 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="service_4" class="price__item dropdown">
+                        <div class="price__item-header">
+                            <button class="btn price__item-title dropdown__button">
+                                Волосы
+                                <span class="dropdown__button-icon arrow price__item-title-icon"></span>
+                            </button>
+                        </div>
+                        <div class="price__row three dropdown__content">
+                            <div class="price__col">
+                                <ul class="price__list">
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Комплекс стрижка
+                                            </span>
+                                            <span>
+                                                2 500 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Комплекс укладка
+                                            </span>
+                                            <span>
+                                                2 000 - 3 000 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Стрижка длины
+                                            </span>
+                                            <span>
+                                                750 ₽
+                                            </span>
+                                        </div>
+                                        <div class="price__list-item-description small">
+                                            одним срезом
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Стрижка челки
+                                            </span>
+                                            <span>
+                                                600 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Мытье головы и сушка
+                                            </span>
+                                            <span>
+                                                950 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Прическа вечерняя
+                                            </span>
+                                            <span>
+                                                3 000 - 4 000 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="price__list">
+                                    <li class="price__list-item heading">
+                                        окрашивание / тонирование
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Короткие волосы
+                                            </span>
+                                            <span>
+                                                5 000 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Средние волосы
+                                            </span>
+                                            <span>
+                                                6 000 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Длинные волосы
+                                            </span>
+                                            <span>
+                                                7 500₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Свыше 50 см
+                                            </span>
+                                            <span>
+                                                9 500 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Корни
+                                            </span>
+                                            <span>
+                                                4 000 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="price__col">
+                                <ul class="price__list">
+                                    <li class="price__list-item heading">
+                                        Абсолютное счастье LEbel
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Комплекс
+                                            </span>
+                                            <span>
+                                                4 000 - 6 000 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Пилинг головы Label
+                                            </span>
+                                            <span>
+                                                950 ₽
+                                            </span>
+                                        </div>
+                                        <div class="price__list-item-top">
+                                            <span class="price__list-item-description small">
+                                                + мытье и сушка
+                                            </span>
+                                            <span>
+                                                +950 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Redken acidic bonding
+                                            </span>
+                                            <span>
+                                                3 000₽
+                                            </span>
+                                        </div>
+                                        <div class="price__list-item-description small">
+                                            восст.
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Маска/Ампула
+                                            </span>
+                                            <span>
+                                                950 ₽
+                                            </span>
+                                        </div>
+                                        <div class="price__list-item-description small">
+                                            (к комплексу)
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Olaplex
+                                            </span>
+                                            <span>
+                                                2 000 ₽
+                                            </span>
+                                        </div>
+                                        <div class="price__list-item-description small">
+                                            в комплексе к окрашиванию
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Olaplex
+                                            </span>
+                                            <span>
+                                                4 000 - 5 000 ₽
+                                            </span>
+                                        </div>
+                                        <div class="price__list-item-description small">
+                                            уход
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                KV-18
+                                            </span>
+                                            <span>
+                                                3 000 ₽
+                                            </span>
+                                        </div>
+                                        <div class="price__list-item-description small">
+                                            пептиды/восстановление
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Botox уход
+                                            </span>
+                                            <span>
+                                                1 500 - 2 000 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="price__col">
+                                <ul class="price__list">
+                                    <li class="price__list-item heading">
+                                        Сложное окрашивание
+                                        <span class="price__list-item-description small">
+                                            AirTouch, шатуш, балаяж, HandTouch
+                                        </span>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Длина до 50 см
+                                            </span>
+                                            <span>
+                                                10 000 - 15 000 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Длина от 50 см
+                                            </span>
+                                            <span>
+                                                15 000 - 20 000 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="price__list">
+                                    <li class="price__list-item heading">
+                                        Осветление корней + Тонирование волос
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Длина до 50 см
+                                            </span>
+                                            <span>
+                                                10 000 - 15 000 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Короткие волосы
+                                            </span>
+                                            <span>
+                                                7 500 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Средние волосы
+                                            </span>
+                                            <span>
+                                                8 500 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Длинные волосы
+                                            </span>
+                                            <span>
+                                                10 000 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Свыше 50 см
+                                            </span>
+                                            <span>
+                                                12 000 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="price__list-item">
+                                        <div class="price__list-item-top">
+                                            <span>
+                                                Снятие цвета
+                                            </span>
+                                            <span>
+                                                3 000 - 10 000 ₽
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -894,7 +2090,7 @@
                 </div>
             </div>
         </section>
-        <section class="section section--gap-top app">
+        <section id="app" class="section section--gap-top app">
             <div class="container">
                 <header class="section__header app__header">
                     <h2 class="section__title">
@@ -929,7 +2125,7 @@
                 </div>
             </div>
         </section>
-        <section class="section section--gap work">
+        <section id="vacancies" class="section section--gap work">
             <div class="container">
                 <header class="section__header">
                     <h2 class="section__title">
@@ -984,11 +2180,11 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="work__item work__faq">
+                        <div class="work__item work__faq dropdown-container">
                             <div class="work__faq-item dropdown">
                                 <button class="btn work__faq-item-button dropdown__button work__heading">
                                     Как откликнуться на вакансию
-                                    <span class="dropdown__button-icon work__faq-item-button-icon"></span>
+                                    <span class="dropdown__button-icon arrow"></span>
                                 </button>
                                 <div class="work__faq-item-content dropdown__content">
                                     <ul>
@@ -1007,7 +2203,7 @@
                             <div class="work__faq-item dropdown">
                                 <button class="btn work__faq-item-button dropdown__button work__heading">
                                     Как проходит собеседование
-                                    <span class="dropdown__button-icon work__faq-item-button-icon"></span>
+                                    <span class="dropdown__button-icon arrow"></span>
                                 </button>
                                 <div class="work__faq-item-content dropdown__content">
                                     <ul>
